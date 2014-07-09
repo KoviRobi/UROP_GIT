@@ -20,9 +20,9 @@ public class RepositoryTest
      * Clones the testing repository and checks the README.md and
      * Test.java file, then deletes the repository.
      */
-	@Test
-	public void testing_repository()
-	{
+    @Test
+    public void testing_repository()
+    {
         try
         {
             Repository testRepo = new Repository("testing", "rmk35", null, null, null, null);
@@ -50,7 +50,7 @@ public class RepositoryTest
         {
             fail("Temporary directory was expected to be empty!");
         }
-	}
+    }
 
     private static File createTempDirectory() throws IOException
     {
